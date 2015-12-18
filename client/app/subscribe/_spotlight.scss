@@ -1,0 +1,76 @@
+﻿.subscribe-spotlight{
+    $spotlight-height: 600px;
+    $box-margin: 10px;
+    margin-top: 121px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: $spotlight-height;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height:$spotlight-height;
+        width: 100%;
+        background-image:url(/assets/images/home/spotlight.jpg);
+        background-position:center top;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        z-index: -1;
+        @media (min-width:$screen-desktop){
+            background-size:100% auto;
+        }
+    }
+
+    &__content {
+        position: relative;
+        &__title {
+            text-align: center;
+            color: $web-color;
+
+        }
+
+        &__item {
+            margin-top: 50px;
+            //position: absolute;
+            padding: 50px;
+            text-align: center;
+            background-color: rgba(248, 248, 248, 0.960784);
+            &__title {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            &__price {
+                &__money {
+                    color: $web-color;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                &__duration {
+                    color: $web-color;
+                }
+            }
+
+            &__detail {
+                &__line {
+                    &--active {
+
+                    }
+                }
+            }
+
+            &__button {
+
+            }
+
+        }
+
+    }
+
+}

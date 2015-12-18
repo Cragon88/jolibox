@@ -1,0 +1,38 @@
+﻿mixin _planPackage(items)
+  each item in items
+    if item.active
+      a(href="#").plan-package
+        .plan-package__item.plan-package__item--active.col-xs-3
+          .plan-package__item__title Monthly plan
+          .plan-package__item__price
+            h2.plan-package__item__price__money USD 21.00
+            .plan-package__item__price__duration monthly
+          .vertical-line
+            .vertical-line__hr-90
+          .plan-package__item__detail
+            p.plan-package__item__detail__line
+              | Lorem ipsum dolor sit amet
+            p.plan-package__item__detail__line
+              | Lorem ipsum dolor sit amet
+            p.plan-package__item__detail__line
+              | Lorem ipsum dolor sit amet
+          .plan-package__item__button.btn
+            span Subscribe
+    else
+      a(href="#").plan-package
+        .plan-package__item.plan-package__item--inactive.col-xs-3
+          .plan-package__item__title Monthly plan
+          .plan-package__item__price
+            h2.plan-package__item__price__money USD 21.00
+            .plan-package__item__price__duration monthly
+          .vertical-line
+            .vertical-line__hr-90
+          .plan-package__item__detail
+            p.plan-package__item__detail__line
+              | Lorem ipsum dolor sit amet
+            p.plan-package__item__detail__line
+              | Lorem ipsum dolor sit amet
+            p.plan-package__item__detail__line
+              | Lorem ipsum dolor sit amet
+          .plan-package__item__button.btn
+            span Subscribe

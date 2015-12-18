@@ -20,7 +20,10 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '_vars.scss';
 @import 'main/_spotlight.scss';
 @import 'main/main.scss';
+@import 'subscribe/_spotlight.scss';
+@import 'subscribe/subscribe.scss';
 @import '../components/footer/footer.scss';
+@import '../components/mixins/plan-package/_plan-package.scss';
 @import '../components/modal/modal.scss';
 @import '../components/navbar/_navbar.scss';
 // endinjector
@@ -75,5 +78,26 @@ body {
     display: inline-block;
     position: relative;
     background-color: white;
+  }
+}
+
+.icon--circle {
+  display:inline-block;
+  padding:0.55em;
+  border-width:2px;
+  border-style:solid;
+  border-radius:100%;
+  margin-right:0.5em;
+  &:hover{
+    text-decoration:none;
+  }
+  &:before {
+    display:block;
+    text-align:center;
+    width:1em;
+    height:1em;
+    line-height:1em;
+    font-size:0.625em;
+    cursor:pointer;
   }
 }

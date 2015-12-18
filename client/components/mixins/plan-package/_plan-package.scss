@@ -1,0 +1,71 @@
+.plan-package {
+  text-decoration: none;
+  color: black;
+  &:hover,&:visited {
+	color: black;
+  }
+  &__item {
+	border: 1px solid;
+	margin-top: 50px;
+	transition:all 330ms ease;
+	//position: absolute;
+	padding: 50px;
+	text-align: center;
+
+	&--active {
+	  background-color: white;
+	  //-ms-transform: scale(1.2,1.2); /* IE 9 */
+	  //-webkit-transform: scale(1.2,1.2); /* Safari */
+	  //transform: scale(1.2,1.2); /* Standard syntax */
+	  &:hover {
+		transform: translate3d(0,-5px,0);
+	  }
+	}
+	&--inactive {
+	  background-color: rgba(248, 248, 248, 0.960784);
+	  &:hover {
+		background-color: white;
+		transform: translate3d(0,-5px,0);
+	  }
+	}
+
+	&__title {
+	  text-transform: uppercase;
+	  font-weight: bold;
+	  font-size: 20px;
+	}
+
+	&__price {
+	  &__money {
+		color: $web-color;
+		text-transform: uppercase;
+		font-weight: bold;
+	  }
+	  &__duration {
+		color: $web-color;
+		font-size: 18px;
+	  }
+	}
+
+	&__detail {
+	  &__line {
+		font-size: 16px;
+		&--active {
+
+		}
+	  }
+	}
+
+	&__button {
+	  margin-top: 15px;
+	  background: $web-color;
+	  color: white;
+	  text-transform: uppercase;
+	  &:hover {
+		color: white;
+	  }
+
+	}
+
+  }
+}

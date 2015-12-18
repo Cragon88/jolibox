@@ -1,18 +1,22 @@
 .nav-bar{
+  $logo-size: 40px;
+  $section-padding: 15px;
   animation-duration:400ms !important;
   background-color:white;
   box-sizing:border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-shadow:0 2px 2px rgba(0, 0, 0, 0.2);
-  transition:all 250ms ease;
-  min-height: 80px;
-  padding: 10px 0;
+  transition:all 500ms ease;
+  padding: $section-padding;
   border-bottom: 1px solid #E5E5E5;
 
-  @media (min-width: $screen-desktop) {
-    min-height: 100px;
-    padding: 15px 0;
+  //@media (min-width: $screen-desktop) {
+  //  padding-top: 15px;
+  //}
+
+  &--active {
+    color: $web-color;
   }
 
   &--fixed {
@@ -23,15 +27,42 @@
       top: 0;
   }
 
+  &.headroom--not-top {
+    .nav-bar__second-line, .nav-bar__first-line__logo__name {
+      display: none;
+    }
+    .nav-bar__first-line__logo__menu {
+      display: inline-block;
+    }
+    .nav-bar__first-line__login__button {
+      background: white;
+      padding: 0;
+      &:hover {
+        color: $web-color;
+      }
+      span {
+        display: none;
+      }
+      .icon--circle {
+        display: inline-block;
+        font-size: 20px;
+        background-color: $very-light-gray;
+        border-color: $very-light-gray;
+        padding:0.45em;
+      }
+      .icon--button {
+        display: none;
+      }
+    }
+  }
+
   &__first-line {
     overflow: auto;
-    padding-bottom: 15px;
-    border-bottom: 1px solid $very-light-gray;
     &__logo {
       padding: 0;
       &__img {
         float: left;
-        width: 50px;
+        width: $logo-size;
         img {
           width: 100%;
           height: auto;
@@ -39,26 +70,60 @@
       }
 
       &__name {
-        margin: 10px 0 0 60px;
+        display: inline-block;
+        margin: 0 0 0 10px;
         text-transform: uppercase;
+        line-height: $logo-size;
+      }
+
+      &__menu {
+        display: none;
+        margin-left: 10px;
+        ul {
+          padding: 15px 0 0 0;
+          margin: 0;
+          list-style-type: none;
+          li {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 16px;
+            margin-right: 30px;
+
+            a {
+              text-transform: uppercase;
+              text-decoration: none;
+              color: black;
+
+              &:hover {
+                color: $web-color;
+              }
+            }
+          }
+        }
       }
     }
 
     &__login{
       text-align: right;
-
+      line-height: $logo-size;
       &__button {
         margin-right: 5px;
         background: $very-light-gray;
         text-transform: uppercase;
+        font-size: 10px;
+
+        .icon--circle {
+          display: none;
+        }
       }
     }
-
   }
 
   &__second-line {
+    margin-top: $section-padding;
+    border-top: 1px solid $very-light-gray;
     ul {
-      padding: 15px 0 0 0;
+      padding: $section-padding 0 0 $section-padding;
       margin: 0;
       list-style-type: none;
       li {
@@ -73,7 +138,7 @@
           color: black;
 
           &:hover {
-            color: red;
+            color: $web-color;
           }
         }
       }

@@ -18,7 +18,7 @@ angular.module('jolibox2App')
         loop: true,
         nav: true,
         //navText: ["prev", "next"],
-        navText: ['<a class="prev main__favorites__carousel__item__link" href="#")><span class="glyphicon glyphicon-chevron-left"></span></a>', '<a class="next main__favorites__carousel__item__link" href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>'],
+        navText: ['<a class="prev main__favorites__carousel__item__link" href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>', '<a class="next main__favorites__carousel__item__link" href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>'],
         dots: false
       };
       $(".main__favorites__carousel--container").owlCarousel(option1);
