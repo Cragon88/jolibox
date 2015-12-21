@@ -1,3 +1,85 @@
 .subscribe {
+  &__box {
+    margin: 35px 0 70px 0;
+    &__img {
+      margin-top: 70px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
 
+    &__description {
+      margin-top: 70px;
+      //font-size: 16px;
+      text-align: center;
+      padding-top: 50px;
+    }
+  }
+
+  &__tweet {
+    background-color: $very-light-gray;
+    padding: 50px 0;
+    //font-size: 16px;
+    .container {
+      .row {
+        background-color: $very-light-gray;
+      }
+    }
+    &__title {
+      padding-bottom: 25px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    &__item {
+      &--container {
+        margin-top: 40px;
+      }
+      &__callout {
+        position: relative;
+        background-color: white;
+        height: 150px;
+        border-radius: 15px;
+        padding: 15px;
+        //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        border: 1px solid $very-light-gray;
+        &:before {
+          content: ' ';
+          position: absolute;
+          width: 0;
+          height: 0;
+          left: 30px;
+          top: 100%;
+          border: 15px solid;
+          border-color: white transparent transparent white;
+        }
+      }
+
+      &__avatar{
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &__name{
+
+      }
+    }
+  }
+
+  &__button {
+    &--container {
+      text-align: center;
+    }
+    min-width: 150px;
+    margin-top: 70px;
+    background: $web-color;
+    color: white;
+    text-transform: uppercase;
+    &:hover {
+      color: white;
+    }
+  }
 }

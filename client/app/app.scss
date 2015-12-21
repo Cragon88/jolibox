@@ -23,6 +23,7 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import 'subscribe/_spotlight.scss';
 @import 'subscribe/subscribe.scss';
 @import '../components/footer/footer.scss';
+@import '../components/mixins/common-grid/_common-grid.scss';
 @import '../components/mixins/plan-package/_plan-package.scss';
 @import '../components/modal/modal.scss';
 @import '../components/navbar/_navbar.scss';
@@ -31,6 +32,7 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 body {
   font-family: $font-gb1911;
+  font-size: 16px;
 }
 
 .web-bg {

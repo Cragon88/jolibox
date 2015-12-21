@@ -35,7 +35,8 @@ angular.module('jolibox2App', [
     $locationProvider.html5Mode(true);
   })
   .controller('AppController', function ($rootScope, $scope) {
-    //$rootScope.App = App;
+    $rootScope.App = App;
+    $scope.activeMenu = "subscribe";
     //$scope.pageTitle = App.pageTitle.home;
 
     $scope.isActive = function(menu) {

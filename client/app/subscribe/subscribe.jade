@@ -1,8 +1,42 @@
+include ../../components/mixins/common-grid/_common-grid.jade
 navbar
 include ./spotlight.jade
 .web-bg
-  .container
-    .row
-      .subscribe
+  .subscribe
+    .container
+      .row
+        .subscribe__box
+          .row
+            h3.section-devider.col-sm-12
+              span {{App.subscribe.title}}
+            .subscribe__box__img.col-sm-5
+              img(src="{{App.subscribe.image}}" alt="")
+            .subscribe__box__description.col-sm-7
+              p {{App.subscribe.description}}
+    .subscribe__tweet
+      .container
+        .row
+          h4.subscribe__tweet__title {{App.subscribe.tweets.title}}
+          .row
+            .subscribe__tweet__item.col-xs-3(ng-repeat="item in App.subscribe.tweets.items")
+              .subscribe__tweet__item__callout
+                p {{item.text}}
+              .subscribe__tweet__item--container
+                .row
+                  .subscribe__tweet__item__avatar.col-xs-3
+                    img(src="{{item.avatar}}" alt="")
+                  .subscribe__tweet__item__name.col-xs-9
+                    p {{item.name}}
+                    p {{item.date}}
 
+    .container
+      .row
+        .grid-container
+          -
+            items = [{title: 'Title something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium. Vestibulum pharetra viverra erat tempus consectetur. Phasellus laoreet sagittis libero vel fringilla. Vestibulum bibendum mauris vitae dolor tempor euismod. Curabitur non dictum lorem, ac pharetra velit. Pellentesque ut volutpat risus.', img: 'http://placehold.it/600x300?text=Logo'}, {title: 'Title something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium. Vestibulum pharetra viverra erat tempus consectetur. Phasellus laoreet sagittis libero vel fringilla. Vestibulum bibendum mauris vitae dolor tempor euismod. Curabitur non dictum lorem, ac pharetra velit. Pellentesque ut volutpat risus.', img: 'http://placehold.it/600x300?text=Logo'}, {title: 'Title something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium. Vestibulum pharetra viverra erat tempus consectetur. Phasellus laoreet sagittis libero vel fringilla. Vestibulum bibendum mauris vitae dolor tempor euismod. Curabitur non dictum lorem, ac pharetra velit. Pellentesque ut volutpat risus.', img: 'http://placehold.it/600x300?text=Logo'}, {title: 'Title something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium. Vestibulum pharetra viverra erat tempus consectetur. Phasellus laoreet sagittis libero vel fringilla. Vestibulum bibendum mauris vitae dolor tempor euismod. Curabitur non dictum lorem, ac pharetra velit. Pellentesque ut volutpat risus.', img: 'http://placehold.it/600x300?text=Logo'}]
+          +commondGrid(items, "past-program__square_grid", true)
+      .row
+        .subscribe__button--container
+          .subscribe__button.btn
+            span Subscribe
 footer
