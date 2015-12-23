@@ -18,27 +18,41 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 // injector
 @import '_fonts.scss';
 @import '_vars.scss';
+@import 'brands/brand-detail.scss';
+@import 'brands/brands.scss';
 @import 'main/_spotlight.scss';
 @import 'main/main.scss';
+@import 'quiz/quiz.scss';
+@import 'reviews/reviews.scss';
 @import 'subscribe/_spotlight.scss';
 @import 'subscribe/subscribe.scss';
+@import 'videos/videos.scss';
 @import '../components/footer/footer.scss';
 @import '../components/mixins/common-grid/_common-grid.scss';
+@import '../components/mixins/hoz-line/_hoz-line.scss';
 @import '../components/mixins/plan-package/_plan-package.scss';
+@import '../components/mixins/product-grid/_product-grid.scss';
+@import '../components/mixins/quiz/_quiz-slide.scss';
 @import '../components/modal/modal.scss';
 @import '../components/navbar/_navbar.scss';
 // endinjector
 
 
 body {
-  font-family: $font-gb1911;
+  font-family: $font-atm;
   font-size: 16px;
+  color: $web-text-color;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  //font-family: $font-atm-bold;
 }
 
 .web-bg {
   //background: $very-light-gray;
   .container {
-    background: white;
+    background: transparent;
   }
 }
 
@@ -48,13 +62,13 @@ body {
   &__hr-100 {
     display: inline-block;
     width: 100%;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid $web-text-color;
   }
 
   &__hr-90 {
     display: inline-block;
     width: 90%;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid $web-text-color;
   }
 }
 
@@ -70,7 +84,7 @@ body {
     display: block;
     position: relative;
     margin-top: -15px;
-    border-top: 1px solid #222;
+    border-top: 1px solid $web-text-color;
     font-size: 20px;
   }
 

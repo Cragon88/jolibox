@@ -32,5 +32,259 @@ var App = {
         }
       ]
     }
+  },
+
+  brands: {
+    title: "Our Brands",
+    search: "Search for a brand",
+    logos: [
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "C",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "C",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "C",
+        image: "http://placehold.it/300x250?text=logo"
+      },
+      {
+        name : "C",
+        image: "http://placehold.it/300x250?text=logo"
+      }
+    ]
+  },
+
+  videos: {
+    title: "Our Videos",
+    search: "Search for a video",
+    items: [
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "A",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "B",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "C",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "C",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "C",
+        image: "http://placehold.it/300x250?text=video"
+      },
+      {
+        name : "C",
+        image: "http://placehold.it/300x250?text=video"
+      }
+    ]
   }
 };

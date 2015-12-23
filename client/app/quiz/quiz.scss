@@ -1,0 +1,44 @@
+.quiz {
+  background-color: $very-light-gray;
+  min-height: 1000px;
+  &__header {
+    padding: 15px 0;
+    border-bottom: 1px solid;
+    overflow: auto;
+    color: $web-color;
+    &__logo {
+      img {
+        width: auto;
+        height: 50px;
+      }
+    }
+    &__text {
+      text-transform: uppercase;
+      text-align: right;
+      line-height: 50px;
+    }
+  }
+
+  &__content {
+    padding: 50px 70px;
+    &__carousel {
+      &--container {
+        .owl-nav {
+          margin-top: 50px;
+          text-align: center;
+          .owl-prev {
+            display: inline-block;
+          }
+
+          .owl-next {
+            display: inline-block;
+          }
+
+          .disabled {
+            opacity: 0.2;
+          }
+        }
+      }
+    }
+  }
+}

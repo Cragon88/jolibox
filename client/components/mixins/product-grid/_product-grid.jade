@@ -1,0 +1,17 @@
+﻿mixin _productGrid(items)
+   .product-grid
+     each item in items
+      .row.product-grid__row
+        .product-grid__cell.product-grid__cell--text.col-xs-12.col-sm-6.col-md-6.col-lg-6.no-gutter
+          .product-grid__cell-body
+            h1.product-grid__cell-body__title Product Title
+            .product-grid__cell-body__price $21.00
+            .product-grid__cell-body__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus. Cras placerat at nibh sagittis pulvinar. Quisque feugiat quam ac turpis convallis, eget accumsan diam porta. Suspendisse quis consectetur tortor.
+            h3.product-grid__cell-body__title Product Application
+            .product-grid__cell-body__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus.
+            h3.product-grid__cell-body__title Ingredients
+            .product-grid__cell-body__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl.
+            .product-grid__cell-body__button.btn X Reviews
+
+        .product-grid__cell.product-grid__cell--image.col-xs-12.col-sm-6.col-md-6.col-lg-6.no-gutter
+          img(alt="")&attributes({src:"http://placehold.it/600x600?text=image"})

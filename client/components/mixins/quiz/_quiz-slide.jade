@@ -1,0 +1,17 @@
+﻿mixin _quiz(items)
+  each item,index in items
+    .quiz-slide
+      //1-image(color); 2-image(brand); 3-image+text; 4-image+name+text
+      h3.quiz-slide__title Question #{index + 1}/#{items.length}
+      h2.quiz-slide__title=item.question
+      .quiz-slide__main
+        if item.type == 1
+          each color in item.colors
+            .quiz-slide__main__item.col-xs-2
+              .quiz-slide__main__item__color(style={background:color})
+        else if item.type == 2
+          | adada
+        else if item.type == 3
+          | adada
+        else if item.type == 4
+          | adada

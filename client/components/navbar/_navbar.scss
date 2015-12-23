@@ -1,7 +1,7 @@
 .nav-bar{
   $logo-size: 40px;
   $section-padding: 15px;
-  animation-duration:400ms !important;
+  animation-duration: 400ms !important;
   background-color:white;
   box-sizing:border-box;
   -webkit-box-sizing: border-box;
@@ -10,11 +10,36 @@
   transition:all 500ms ease;
   padding: $section-padding;
   border-bottom: 1px solid #E5E5E5;
-
+  font-family: $font-atm-bold;
   //@media (min-width: $screen-desktop) {
   //  padding-top: 15px;
   //}
+  .nav-bar__second-line {
+    border-top: 1px solid $web-text-color;
+    a {
+      color: $web-text-color;
+      &:hover {
+        color: $web-text-color;
+      }
+    }
+  }
+  &--main {
+    color: white;
 
+    .nav-bar__second-line {
+      border-top: 1px solid white;
+      a {
+        color: white;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
   &--active {
     color: $web-color;
   }
@@ -28,6 +53,7 @@
   }
 
   &.headroom--not-top {
+    background-color: white;
     .nav-bar__second-line, .nav-bar__first-line__logo__name {
       display: none;
     }
@@ -35,29 +61,35 @@
       display: inline-block;
     }
     .nav-bar__first-line__login__button {
-      background: white;
+      background: transparent;
       padding: 0;
-      &:hover {
-        color: $web-color;
-      }
       span {
         display: none;
       }
       .icon--circle {
         display: inline-block;
         font-size: 20px;
-        background-color: $very-light-gray;
-        border-color: $very-light-gray;
+        background-color: $web-color-op;
+        border: 0;
         padding:0.45em;
+        &:hover {
+          background: $web-color;
+        }
       }
       .icon--button {
+        color: white;
         display: none;
       }
     }
   }
 
+  &--transparent.headroom--top {
+    background-color: transparent;
+  }
+
   &__first-line {
     overflow: auto;
+
     &__logo {
       padding: 0;
       &__img {
@@ -92,10 +124,10 @@
             a {
               text-transform: uppercase;
               text-decoration: none;
-              color: black;
+              color: $web-text-color;
 
               &:hover {
-                color: $web-color;
+                color: $web-text-color;
               }
             }
           }
@@ -108,11 +140,16 @@
       line-height: $logo-size;
       &__button {
         margin-right: 5px;
-        background: $very-light-gray;
+        background: $web-color-op;
         text-transform: uppercase;
         font-size: 10px;
-
+        color: white;
+        &:hover {
+          color: white;
+          background: $web-color;
+        }
         .icon--circle {
+          color: white;
           display: none;
         }
       }
@@ -121,7 +158,6 @@
 
   &__second-line {
     margin-top: $section-padding;
-    border-top: 1px solid $very-light-gray;
     ul {
       padding: $section-padding 0 0 $section-padding;
       margin: 0;
@@ -135,11 +171,6 @@
         a {
           text-transform: uppercase;
           text-decoration: none;
-          color: black;
-
-          &:hover {
-            color: $web-color;
-          }
         }
       }
     }

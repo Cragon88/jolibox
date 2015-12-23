@@ -1,7 +1,7 @@
 ﻿.subscribe-spotlight{
     $spotlight-height: 600px;
     $box-margin: 10px;
-    margin-top: 121px;
+    margin-top: $page-margin-top;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -9,22 +9,6 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
-    &__bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height:$spotlight-height;
-        width: 100%;
-        background-image:url(/assets/images/home/spotlight.jpg);
-        background-position:center top;
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-        z-index: -1;
-        @media (min-width:$screen-desktop){
-            background-size:100% auto;
-        }
-    }
 
     &__content {
         position: relative;

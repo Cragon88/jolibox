@@ -11,6 +11,7 @@ angular.module('jolibox2App')
       //$http.get('/api/things').then(function(response) {
       //  self.awesomeThings = response.data;
       //});
+      $scope.$parent.activeMenu = "home";
       var option1 = {
         items:5,
         smartSpeed: 800,

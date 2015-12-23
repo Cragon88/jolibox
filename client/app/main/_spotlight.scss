@@ -1,55 +1,49 @@
 ﻿.spotlight{
-    $spotlight-height: 384px;
+    $spotlight-height: 600px;
     $box-margin: 10px;
-    margin-top: 121px;
+    //margin-top: $page-margin-top;
     width: 100%;
     position: relative;
     overflow: hidden;
-    height: 384px;
+    height: $spotlight-height;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
-    &__bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height:426px;
-        width: 100%;
-        background-image:url(/assets/images/home/spotlight.jpg);
-        background-position:center top;
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-        z-index: -1;
-        @media (min-width:$screen-desktop){
-            background-size:100% auto;
-        }
-    }
 
     &__content {
         position:absolute;
         top: 0;
         //transform:translate3d(0, -40%,0);
         width: 100%;
-
         &__box{
-            margin-top: $box-margin;
-            height: $spotlight-height - $box-margin*2;
+            margin-top: $box-margin + $page-margin-top;
+            height: $spotlight-height - $box-margin*2 - $page-margin-top;
             background-color: rgba(255, 255, 255, 0.7);
             &--container {
                 text-align: center;
             }
             &__title {
+                font-family: $font-atm-bold-italic;
+                &--month {
+
+                }
+
+                &--name {
+
+                }
 
             }
             &__content {
                 font-size: 18px;
-                line-height: 1.5;
+                line-height: 1.6;
                 text-align: left;
 
-                ul li {
-                    &:nth-last-child(1) {
-                        font-weight: bold;
+                ul {
+                    margin-top: 15px;
+                    li {
+                        &:nth-last-child(1) {
+                            font-family: $font-atm-bold;
+                        }
                     }
                 }
             }
@@ -57,12 +51,14 @@
             &__button {
                 text-transform: uppercase;
                 margin-top: 50px;
-                font-weight: bold;
+                font-family: $font-atm-bold;
                 color: white;
-                background-color: $web-color;
-                width: 150px;
+                background-color: $web-color-op;
+                padding: 10px;
+                width: 200px;
                 &:hover {
                     color: white;
+                    background-color: $web-color
                 }
             }
         }

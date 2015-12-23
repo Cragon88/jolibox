@@ -1,0 +1,14 @@
+include ../../components/mixins/quiz/_quiz-slide.jade
+.web-bg
+  .quiz
+    .container
+      .row
+        .quiz__header
+          .quiz__header__logo.col-xs-6
+            img(src="http://placehold.it/300x300?text=logo")
+          .quiz__header__text.col-xs-6 JoliBox Quiz
+        .quiz__content
+          .owl-carousel.quiz__content__carousel--container
+            - var items = [{type: 1, question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium?", colors: ["#fcefe5", "#efd2cc", "#deab7d", "#b67245", "#64321e", "#452c28"]},{type: 2,question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium?",images: ["http://placehold.it/300x300?text=Image", "http://placehold.it/300x300?text=Image", "http://placehold.it/300x300?text=Image","http://placehold.it/300x300?text=Image", "http://placehold.it/300x300?text=Image", "http://placehold.it/300x300?text=Image"]},{type: 3,question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium?",images: [{title: "Title Something",image: "http://placehold.it/300x300?text=Image"}]},{type: 4,question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium?",images: [{title: "Title Something",text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium.",image: "http://placehold.it/300x300?text=Image"}]}];
+            +_quiz(items)
+

@@ -1,0 +1,30 @@
+.brand-detail {
+  margin-top: $page-margin-top;
+
+  &__spotlight {
+    &__logo {
+      padding: 0;
+      border: 1px solid;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__bg {
+      padding: 0;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__text {
+      margin-top: 15px;
+    }
+  }
+
+  &__products {
+
+  }
+}

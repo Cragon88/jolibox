@@ -4,7 +4,7 @@
       .nav-bar__first-line__logo.col-xs-9
         .nav-bar__first-line__logo__img
           a(href="/")
-            img(src="http://placehold.it/100x100?text=People" alt="")
+            img(src="/assets/images/logo.jpg" alt="")
         h2.nav-bar__first-line__logo__name JoliBox
         .nav-bar__first-line__logo__menu
           ul
@@ -12,15 +12,20 @@
               a(href="/subscribe")
                 span(ng-class="{'nav-bar--active': isActive('subscribe')}") Subscribe
             li
-              a(href="#") Videos
+              a(href="/videos")
+                span(ng-class="{'nav-bar--active': isActive('videos')}") Videos
             li
-              a(href="#") Brands
+              a(href="/brands")
+                span(ng-class="{'nav-bar--active': isActive('brands')}") Brands
             li
-              a(href="#") Reviews
+              a(href="/reviews")
+                span(ng-class="{'nav-bar--active': isActive('reviews')}") Reviews
             li
-              a(href="#") About us
+              a(href="#")
+                span(ng-class="{'nav-bar--active': isActive('aboutUs')}") About
             li
-              a(href="#") Contact us
+              a(href="#")
+                span(ng-class="{'nav-bar--active': isActive('ContactUs')}") Contact
       .nav-bar__first-line__login.col-xs-3
         .nav-bar__first-line__login__button.btn
           i.fa.fa-user-plus.icon--circle
@@ -36,12 +41,17 @@
           a(href="/subscribe")
             span(ng-class="{'nav-bar--active': isActive('subscribe')}") Subscribe
         li
-          a(href="#") Videos
+          a(href="/videos")
+            span(ng-class="{'nav-bar--active': isActive('videos')}") Videos
         li
-          a(href="#") Brands
+          a(href="/brands")
+            span(ng-class="{'nav-bar--active': isActive('brands')}") Brands
         li
-          a(href="#") Reviews
+          a(href="/reviews")
+            span(ng-class="{'nav-bar--active': isActive('reviews')}") Reviews
         li
-          a(href="#") About us
+          a(href="#")
+            span(ng-class="{'nav-bar--active': isActive('aboutUs')}") About
         li
-          a(href="#") Contact us
+          a(href="#")
+            span(ng-class="{'nav-bar--active': isActive('ContactUs')}") Contact

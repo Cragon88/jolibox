@@ -1,0 +1,25 @@
+.hoz-line {
+  width: 100%;
+
+  &--container {
+    position: relative;
+  }
+
+  &__line {
+    display: inline-block;
+    width: 35%;
+    border-top: 2px solid;
+  }
+
+  &__text {
+    top: 5px;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-atm-bold;
+    margin: 0;
+  }
+}

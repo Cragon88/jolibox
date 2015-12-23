@@ -1,0 +1,16 @@
+navbar
+.web-bg
+  .container
+    .row
+      .brands
+        h1.brands__title {{App.brands.title}}
+        .brands__search--container
+          .form-group
+            input.brands__search.form-control(type="text" id="brand-search" placeholder="{{App.brands.search}}")
+        .brands__item--container
+          .row
+            .brands__item.col-xs-6.col-sm-3.col-md-2(ng-repeat="logo in activeBrands track by $index")
+              .brands__item__logo
+                a(href="/brand-detail")
+                  img(src="{{logo.image}}" alt="")
+footer

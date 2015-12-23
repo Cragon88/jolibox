@@ -12,31 +12,77 @@ angular.module('jolibox2App', [
       .otherwise('/');
 
     $stateProvider
-      .state('main', {
-        url: '/',
-        views: {
-          "main" : {
-            templateUrl: 'app/main/main.html',
-            controller: 'MainController'
+        .state('main', {
+          url: '/',
+          views: {
+            "main" : {
+              templateUrl: 'app/main/main.html',
+              controller: 'MainController'
+            }
           }
-        }
-      })
-      .state('subscribe', {
-        url: '/subscribe',
-        views: {
-          "main" : {
-            templateUrl: 'app/subscribe/subscribe.html',
-            controller: 'SubscribeController'
+        })
+        .state('subscribe', {
+          url: '/subscribe',
+          views: {
+            "main" : {
+              templateUrl: 'app/subscribe/subscribe.html',
+              controller: 'SubscribeController'
+            }
           }
-        }
-      })
+        })
+        .state('brands', {
+          url: '/brands',
+          views: {
+            "main" : {
+              templateUrl: 'app/brands/brands.html',
+              controller: 'BrandsController'
+            }
+          }
+        })
+        .state('brand-detail', {
+          url: '/brand-detail',
+          views: {
+            "main" : {
+              templateUrl: 'app/brands/brand-detail.html',
+              controller: 'BrandDetailController'
+            }
+          }
+        })
+        .state('videos', {
+          url: '/videos',
+          views: {
+            "main" : {
+              templateUrl: 'app/videos/videos.html',
+              controller: 'VideosController'
+            }
+          }
+        })
+        .state('reviews', {
+          url: '/reviews',
+          views: {
+            "main" : {
+              templateUrl: 'app/reviews/reviews.html',
+              controller: 'ReviewsController'
+            }
+          }
+        })
+        .state('quiz', {
+          url: '/quiz',
+          views: {
+            "main" : {
+              templateUrl: 'app/quiz/quiz.html',
+              controller: 'QuizController'
+            }
+          }
+        })
     ;
 
     $locationProvider.html5Mode(true);
   })
   .controller('AppController', function ($rootScope, $scope) {
     $rootScope.App = App;
-    $scope.activeMenu = "subscribe";
+    $rootScope.Quiz = Quiz;
+    $scope.activeMenu = "home";
     //$scope.pageTitle = App.pageTitle.home;
 
     $scope.isActive = function(menu) {

@@ -42,7 +42,7 @@
         height: 150px;
         border-radius: 15px;
         padding: 15px;
-        //box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
         border: 1px solid $very-light-gray;
         &:before {
           content: ' ';

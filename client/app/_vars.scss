@@ -50,10 +50,19 @@ $pantone-7545U: #68757D;
 $pantone-5625C: #7C8D7E;
 $pantone-198U:  #E85978;
 
-$web-color: rgb(60,112,25);
+//$web-color: rgb(60,112,25);
+$web-color: rgb(15,56,15);
+$menu-bg-color: rgb(213,242,207);
+$web-color-op: rgba(15,56,15,0.7);
+$web-text-color: rgb(53,37,7);
 
 //$font-bold:"ralewayblack", Helvetica, Arial, sans-serif;
 //$font-light:"ralewaylight", Helvetica, Arial, sans-serif;
 //$font-medium:"ralewaymedium", Helvetica, Arial, sans-serif;
 
 $font-gb1911: "goudy bookletter 1911", Helvetica, Arial, sans-serif;
+$font-atm: "aptima", Helvetica, Arial, sans-serif;
+$font-atm-italic: "aptimaitalic", Helvetica, Arial, sans-serif;
+$font-atm-bold: "aptimabold", Helvetica, Arial, sans-serif;
+$font-atm-bold-italic: "aptimabolditalic", Helvetica, Arial, sans-serif;
+$page-margin-top: 124px;

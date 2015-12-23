@@ -1,0 +1,16 @@
+navbar
+.web-bg
+  .container
+    .row
+      .videos
+        h1.videos__title {{App.videos.title}}
+        .videos__search--container
+          .form-group
+            input.videos__search.form-control(type="text" id="video-search" placeholder="{{App.videos.search}}")
+        .videos__item--container
+          .row
+            .videos__item.col-xs-6.col-sm-3.col-md-2(ng-repeat="video in activeVideos track by $index")
+              .videos__item__video
+                a(href="#")
+                  img(src="{{video.image}}" alt="")
+footer

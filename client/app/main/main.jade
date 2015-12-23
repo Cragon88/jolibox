@@ -1,18 +1,26 @@
-navbar
-include ./spotlight.jade
-.web-bg
+include ../../components/mixins/hoz-line/_hoz-line.jade
+navbar.nav-bar--transparent.nav-bar--main
+.main-web-bg
+  include ./spotlight.jade
   .container
     .row
       .main
         section.main__guide
           .row
             .main__guide__img.col-xs-3
-              img(src="http://placehold.it/540x436?text=Image" alt="")
-            .main__guide__img.col-xs-9
-              img(src="http://placehold.it/1200x300?text=Guide%20image" alt="")
+              h2.main__guide__img__title 1 Order
+              img(src="/assets/images/home/step1.png" alt="")
+            .main__guide__img.col-xs-3
+              h2.main__guide__img__title 2 Receive
+              img(src="/assets/images/home/step2.png" alt="")
+            .main__guide__img.col-xs-3
+              h2.main__guide__img__title 3 Explore
+              img(src="/assets/images/home/step3.png" alt="")
+            .main__guide__img.col-xs-3
+              h2.main__guide__img__title 4 Share
+              img(src="/assets/images/home/step1.png" alt="")
         section.main__favorites
-          h3.section-devider
-            span Last Beauty Favorites
+          +_hoz-line('Last Beauty Favorites', '25px')
           .main__favorites__carousel
             .owl-carousel.main__favorites__carousel--container
               .main__favorites__carousel__item
@@ -34,8 +42,7 @@ include ./spotlight.jade
               .main__favorites__carousel__item
                 img(src="http://placehold.it/300x300?text=Image%209" alt="")
         section.main__brands
-          h3.section-devider
-            span Featured brands
+          +_hoz-line('Featured brands', "25px")
           .main__brands__carousel
             .owl-carousel.main__brands__carousel--container
               .row
@@ -77,4 +84,17 @@ include ./spotlight.jade
                   img(src="http://placehold.it/300x300?text=Image%2017" alt="")
                 .main__brands__carousel__item.col-xs-2
                   img(src="http://placehold.it/300x300?text=Image%2018" alt="")
-footer
+        section.main__bottom
+          .main__bottom__button--container
+            .btn.main__bottom__button Sign up for newsletter
+
+          .main__bottom__share--container
+            .main__bottom__share
+              i.main__bottom__share__item.fa.fa-youtube-play.icon--circle
+              i.main__bottom__share__item.fa.fa-pinterest.icon--circle
+              i.main__bottom__share__item.fa.fa-instagram.icon--circle
+              i.main__bottom__share__item.fa.fa-facebook.icon--circle
+              i.main__bottom__share__item.fa.fa-google-plus.icon--circle
+          .main__bottom__description
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus. Cras placerat at nibh sagittis pulvinar. Quisque feugiat quam ac turpis convallis, eget accumsan diam porta. Suspendisse quis consectetur tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus. Cras placerat at nibh sagittis pulvinar. Quisque feugiat quam ac turpis convallis, eget accumsan diam porta. Suspendisse quis consectetur tortor.
+//footer

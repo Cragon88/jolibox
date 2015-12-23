@@ -22,21 +22,17 @@
   }
 }
 
-.grid-container {
-  //padding: 20px 0;
-}
-
-.two-grid {
-  .two-grid__row:nth-child(2n+1) {
-    .two-grid__cell--text {
-      float: right;
-    }
-  }
-  .two-grid__row:nth-last-child(1) {
+.product-grid {
+  //.product-grid__row:nth-child(2n+1) {
+  //  .product-grid__cell--text {
+  //    float: right;
+  //  }
+  //}
+  .product-grid__row:nth-last-child(1) {
     border-bottom: 0;
   }
   &__row {
-    padding: 70px 0 25px 0;
+    padding: 50px 0 25px 0;
     border-bottom: 1px solid $very-light-gray;
   }
   &__cell {
@@ -57,47 +53,32 @@
     }
     &--text {
       font-size: 16px;
-      padding: 20px;
+      //padding: 20px;
+      float: right;
       @include respond-to-min($screen-tablet) {
         width: 100%;
       }
 
       @include respond-to-min($screen-desktop) {
-        width: 66%;
+        width: 50%;
       }
     }
 
     &--image {
       overflow: hidden;
       padding: 0;
+      text-align: center;
       @include respond-to-min($screen-tablet) {
         width: 100%;
       }
 
       @include respond-to-min($screen-desktop) {
-        width: 34%;
+        width: 50%;
       }
 
       img {
-        width: 100%;
-        transition: all .3s ease-in-out;
-        @include respond-to-min($screen-desktop) {
-          width: auto;
-          height: 100%;
-          position: absolute;
-          left: 0;
-        }
-        @include respond-to-min($screen-lg-desktop) {
-          width: 100%;
-          height: auto;
-          position: static;
-        }
-      }
-      &-left {
-        text-align: right;
-      }
-      &-right {
-        text-align: left;
+        width: 70%;
+        height: auto;
       }
     }
   }
@@ -106,13 +87,26 @@
     font-size: 16px;
     margin-bottom: 15px;
     &__title {
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
+      margin: 0;
+    }
+
+    &__price {
+      color: $web-color;
+      font-size: 18px;
     }
 
     &__text {
-      padding-top: 10px;
+      padding: 10px 0;
+    }
+
+    &__button {
+      margin-top: 10px;
+      color: black;
+      background-color: $very-light-gray;
+      &:hover {
+        color: white;
+        background-color: $gray;
+      }
     }
   }
 }

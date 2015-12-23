@@ -1,0 +1,20 @@
+include ../../components/mixins/product-grid/_product-grid.jade
+navbar
+.web-bg
+  .container
+    .row
+      .brand-detail
+        .brand-detail__spotlight
+          .row
+            .brand-detail__spotlight__logo.col-xs-2
+              img(src="http://placehold.it/278x200?text=logo" alt="")
+            .brand-detail__spotlight__bg.col-xs-10
+              img(src="http://placehold.it/1390x200?text=background" alt="")
+          .row
+            .brand-detail__spotlight__text
+            p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus. Cras placerat at nibh sagittis pulvinar. Quisque feugiat quam ac turpis convallis, eget accumsan diam porta. Suspendisse quis consectetur tortor."
+        .row
+          .brand-detail__products
+            +_productGrid([{}, {}])
+
+footer
