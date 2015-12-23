@@ -14,8 +14,9 @@
         position: relative;
         &__title {
             text-align: center;
-            color: $web-color;
-
+            color: white;
+            font-family: $font-atm-bold;
+            margin-bottom: 60px;
         }
 
         &__item {

@@ -1,6 +1,9 @@
-﻿mixin _hoz-line(text, marginTop)
+﻿mixin _hoz-line(text, marginTop, isNotWhite)
   .hoz-line(style={'margin-top': marginTop})
     .hoz-line--container
       .hoz-line__line
-      h3.hoz-line__text=text
+      if isNotWhite
+        h3.hoz-line__text=text
+      else
+        h3.hoz-line__text(style={color:"white"}) #{text}
       .hoz-line__line

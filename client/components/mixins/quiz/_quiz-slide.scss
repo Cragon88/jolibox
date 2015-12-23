@@ -1,9 +1,16 @@
 .quiz-slide{
+  &__question {
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
+    font-family: $font-atm-bold;
+  }
+
   &__title {
     width: 80%;
-    margin: 50px auto;
+    margin: 25px auto;
     text-align: center;
-
+    min-height: 60px;
   }
   &__main {
     &__item {
@@ -14,11 +21,65 @@
         border-radius: 100%;
       }
       &__brand {
-
+        padding: 0;
+        border: 1px solid white;
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
 
-      &__aaa {
+      &__image-text {
+        padding: 0;
+        position: relative;
+        border: 1px solid white;
+        &--text {
+          width: 100%;
+          position: absolute;
+          bottom: 20px;
+          color: white;
+          text-align: center;
+          font-family: $font-atm-bold;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
 
+      &__image-name-text {
+        color: white;
+        font-size: 18px;
+        &--container-1 {
+          background-color: rgb(189, 195, 199);
+          min-height: 500px;
+        }
+        &--container-2 {
+          background-color: rgb(149, 165, 166);
+          min-height: 500px;
+        }
+        &--container-3 {
+          background-color: rgb(127, 140, 141);
+          min-height: 500px;
+        }
+        &__img {
+          width: 50%;
+          margin: 25px auto;
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 100%;
+          }
+        }
+
+        &__name {
+          font-family: $font-atm-bold;
+          font-size: 20px;
+        }
+
+        &__text {
+          padding: 10px 25px;
+        }
       }
     }
   }
@@ -30,6 +91,7 @@
       color: white;
       background: $gray;
       margin-right: 15px;
+      font-family: $font-atm-bold;
       &:hover {
         color: white;
       }
@@ -39,7 +101,24 @@
       text-transform: uppercase;
       width: 150px;
       color: white;
+      font-family: $font-atm-bold;
       background: $web-color;
+      &:hover {
+        color: white;
+      }
+    }
+
+    &--submit {
+      position: absolute;
+      z-index: 99;
+      display: none;
+      bottom: 0;
+      right: 0;
+      text-transform: uppercase;
+      width: 150px;
+      color: white;
+      font-family: $font-atm-bold;
+      background: $pantone-198U;
       &:hover {
         color: white;
       }

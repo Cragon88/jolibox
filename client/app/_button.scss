@@ -1,0 +1,10 @@
+.web-btn {
+  background-color: $web-color-op;
+  color: white;
+  text-transform: uppercase;
+  &:hover {
+    color: white;
+    background: $web-color;
+  }
+}
+

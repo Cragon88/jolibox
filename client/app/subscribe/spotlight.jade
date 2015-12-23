@@ -1,7 +1,10 @@
 ﻿include ../../components/mixins/plan-package/_plan-package.jade
-section.subscribe-spotlight(style="background-image: url(/assets/images/subscribe/bg.jpg);")
+section.subscribe-spotlight(style="background-image: url(/assets/images/subscribe/banner.jpg);")
   .subscribe-spotlight__content
     .container
       h1.subscribe-spotlight__content__title.col-xs-12 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      +_planPackage([{active: true}, {active: false}, {active: false}, {active: false}])
+      .plan-package--main
+        +_planPackage([{active: true, title: "Monthly"}])
+      .plan-package--not-main
+        +_planPackage([{active: false, title: "3-month"}, {active: false, title: "6-month"}, {active: false, title: "12-month"}])
 

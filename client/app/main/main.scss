@@ -110,17 +110,9 @@
     padding-top: $padding-section;
     &__button {
       width: 50%;
-      background-color: $web-color-op;
-      color: white;
-      text-transform: uppercase;
       font-size: 24px;
       &--container {
         text-align: center;
-      }
-
-      &:hover {
-        color: white;
-        background: $web-color;
       }
     }
 

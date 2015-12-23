@@ -1,38 +1,40 @@
 ﻿mixin _planPackage(items)
   each item in items
     if item.active
-      a(href="#").plan-package
-        .plan-package__item.plan-package__item--active.col-xs-3
-          .plan-package__item__title Monthly plan
+      a(href="/quiz").plan-package
+        .plan-package__item.plan-package__item--active.col-xs-12
+          .plan-package__item__title=item.title
           .plan-package__item__price
-            h2.plan-package__item__price__money USD 21.00
+            .plan-package__item__price__money USD 21.00
             .plan-package__item__price__duration monthly
           .vertical-line
             .vertical-line__hr-90
           .plan-package__item__detail
             p.plan-package__item__detail__line
-              | Lorem ipsum dolor sit amet
+              | 5 luxury beauty products
             p.plan-package__item__detail__line
-              | Lorem ipsum dolor sit amet
+              | $21, billed every month
             p.plan-package__item__detail__line
-              | Lorem ipsum dolor sit amet
-          .plan-package__item__button.btn
+              | Free shipping within the US
+          .plan-package__item__button.btn.web-btn
             span Subscribe
     else
-      a(href="#").plan-package
-        .plan-package__item.plan-package__item--inactive.col-xs-3
-          .plan-package__item__title Monthly plan
+      a(href="/quiz").plan-package
+        .plan-package__item.plan-package__item--inactive.col-xs-4
+          .plan-package__item__title=item.title
           .plan-package__item__price
-            h2.plan-package__item__price__money USD 21.00
+            .plan-package__item__price__money USD 18.50
             .plan-package__item__price__duration monthly
           .vertical-line
             .vertical-line__hr-90
           .plan-package__item__detail
             p.plan-package__item__detail__line
-              | Lorem ipsum dolor sit amet
+              | 5 luxury beauty products
+            p.plan-package__item__detail__line.plan-package__item__detail__line--active
+              | $222 paid upfront
             p.plan-package__item__detail__line
-              | Lorem ipsum dolor sit amet
+              | Billed every xxx months*
             p.plan-package__item__detail__line
-              | Lorem ipsum dolor sit amet
-          .plan-package__item__button.btn
+              | Free shipping within the US
+          .plan-package__item__button.btn.web-btn
             span Subscribe

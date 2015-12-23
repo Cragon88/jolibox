@@ -75,6 +75,15 @@ angular.module('jolibox2App', [
             }
           }
         })
+        .state('checkout', {
+          url: '/checkout',
+          views: {
+            "main" : {
+              templateUrl: 'app/checkout/checkout.html',
+              controller: 'CheckoutController'
+            }
+          }
+        })
     ;
 
     $locationProvider.html5Mode(true);

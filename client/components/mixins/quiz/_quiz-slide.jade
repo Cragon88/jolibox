@@ -2,7 +2,7 @@
   each item,index in items
     .quiz-slide
       //1-image(color); 2-image(brand); 3-image+text; 4-image+name+text
-      h3.quiz-slide__title Question #{index + 1}/#{items.length}
+      h3.quiz-slide__question Question #{index + 1}/#{items.length}
       h2.quiz-slide__title=item.question
       .quiz-slide__main
         if item.type == 1
@@ -10,8 +10,28 @@
             .quiz-slide__main__item.col-xs-2
               .quiz-slide__main__item__color(style={background:color})
         else if item.type == 2
-          | adada
+          each img in item.images
+            .quiz-slide__main__item.quiz-slide__main__item__brand.col-xs-2
+              img(src="#{img}" alt="")
         else if item.type == 3
-          | adada
+          each img in item.images
+            .quiz-slide__main__item.quiz-slide__main__item__image-text.col-xs-3
+              img(src="#{img.image}" alt="")
+              .quiz-slide__main__item__image-text--text=img.title
         else if item.type == 4
-          | adada
+            .quiz-slide__main__item.quiz-slide__main__item__image-name-text
+              .quiz-slide__main__item__image-name-text--container-1.col-xs-4
+                .quiz-slide__main__item__image-name-text__img
+                  img(src="#{item.nc.image}" alt="")
+                .quiz-slide__main__item__image-name-text__name=item.nc.title
+                .quiz-slide__main__item__image-name-text__text=item.nc.text
+              .quiz-slide__main__item__image-name-text--container-2.col-xs-4
+                .quiz-slide__main__item__image-name-text__img
+                  img(src="#{item.sc.image}" alt="")
+                .quiz-slide__main__item__image-name-text__name=item.sc.title
+                .quiz-slide__main__item__image-name-text__text=item.sc.text
+              .quiz-slide__main__item__image-name-text--container-3.col-xs-4
+                .quiz-slide__main__item__image-name-text__img
+                  img(src="#{item.vc.image}" alt="")
+                .quiz-slide__main__item__image-name-text__name=item.vc.title
+                .quiz-slide__main__item__image-name-text__text=item.vc.text

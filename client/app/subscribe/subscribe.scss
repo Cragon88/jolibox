@@ -73,13 +73,10 @@
     &--container {
       text-align: center;
     }
-    min-width: 150px;
+    min-width: 200px;
     margin-top: 70px;
-    background: $web-color;
-    color: white;
+    padding: 10px;
     text-transform: uppercase;
-    &:hover {
-      color: white;
-    }
+    font-family: $font-atm-bold;
   }
 }
