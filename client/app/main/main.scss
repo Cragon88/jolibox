@@ -19,16 +19,17 @@
   &__guide {
     padding: $padding-section 0;
     &__img {
+      text-align: center;
       &__title {
-        background-color: $web-color-op;
+        //background-color: $web-color-op;
         margin: 0;
         text-align: center;
         line-height: 70px;
-        color: white;
+        //color: white;
       }
       img {
-        background-color: $web-color-op;
-        width: 100%;
+        //background-color: $web-color-op;
+        width: 80%;
         height: auto;
       }
     }
@@ -79,12 +80,40 @@
 
       &__item {
         &__img {
-          background: rgba(255, 255, 255, 0.5);
+          //background: rgba(255, 255, 255, 0.5);
           img {
             height: auto;
             margin: 0 auto;
           }
         }
+
+        &__content {
+          //background: rgba(255, 255, 255, 0.5);
+          text-align: center;
+          &__vote {
+            color: $web-color;
+            padding-top: 5px;
+            i {
+              font-size: 15px;
+              margin-right: 5px;
+            }
+
+            &--not {
+              color: white;
+            }
+          }
+          &__title {
+            padding-top: 10px;
+            text-transform: uppercase;
+            width: 80%;
+            margin: 0 auto;
+          }
+          &__text {
+            padding-bottom: 10px;
+            font-size: 15px;
+          }
+        }
+
         &__link {
           font-size: 50px;
         }
@@ -101,7 +130,6 @@
 
       &__item {
         &__img {
-          background: rgba(255, 255, 255, 0.5);
           img {
             height: auto;
             margin: 0 auto;

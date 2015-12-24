@@ -14,7 +14,26 @@
   }
   &__main {
     &__item {
+      position: relative;
       text-align: center;
+      &__checkbox {
+        display: none;
+        position: absolute;
+        //margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 50px;
+        //.icon--circle {
+        //  margin: 0;
+        //  color: white;
+        //  background-color: $web-color;
+        //  border: 0;
+        //  padding: 0.35em;
+        //  font-size: 30px;
+        //}
+      }
       &__color {
         margin: 0 auto;
         width: 100px;

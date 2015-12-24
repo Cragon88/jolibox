@@ -6,32 +6,44 @@
       h2.quiz-slide__title=item.question
       .quiz-slide__main
         if item.type == 1
-          each color in item.colors
-            .quiz-slide__main__item.col-xs-2
+          each color,idx in item.colors
+            .quiz-slide__main__item.col-xs-2(id="#{index}_1_#{idx}")
               .quiz-slide__main__item__color(style={background:color})
+              .quiz-slide__main__item__checkbox
+                i.fa.fa-check
         else if item.type == 2
-          each img in item.images
-            .quiz-slide__main__item.quiz-slide__main__item__brand.col-xs-2
+          each img,idx in item.images
+            .quiz-slide__main__item.quiz-slide__main__item__brand.col-xs-2(id="#{index}_2_#{idx}")
               img(src="#{img}" alt="")
+              .quiz-slide__main__item__checkbox
+                i.fa.fa-check
         else if item.type == 3
-          each img in item.images
-            .quiz-slide__main__item.quiz-slide__main__item__image-text.col-xs-3
+          each img,idx in item.images
+            .quiz-slide__main__item.quiz-slide__main__item__image-text.col-xs-3(id="#{index}_3_#{idx}")
               img(src="#{img.image}" alt="")
               .quiz-slide__main__item__image-text--text=img.title
+              .quiz-slide__main__item__checkbox
+                i.fa.fa-check
         else if item.type == 4
-            .quiz-slide__main__item.quiz-slide__main__item__image-name-text
-              .quiz-slide__main__item__image-name-text--container-1.col-xs-4
+            .quiz-slide__main__item__image-name-text
+              .quiz-slide__main__item.quiz-slide__main__item__image-name-text--container-1.col-xs-4(id="#{index}_4_1")
                 .quiz-slide__main__item__image-name-text__img
                   img(src="#{item.nc.image}" alt="")
                 .quiz-slide__main__item__image-name-text__name=item.nc.title
                 .quiz-slide__main__item__image-name-text__text=item.nc.text
-              .quiz-slide__main__item__image-name-text--container-2.col-xs-4
+                .quiz-slide__main__item__checkbox
+                  i.fa.fa-check
+              .quiz-slide__main__item.quiz-slide__main__item__image-name-text--container-2.col-xs-4(id="#{index}_4_2")
                 .quiz-slide__main__item__image-name-text__img
                   img(src="#{item.sc.image}" alt="")
                 .quiz-slide__main__item__image-name-text__name=item.sc.title
                 .quiz-slide__main__item__image-name-text__text=item.sc.text
-              .quiz-slide__main__item__image-name-text--container-3.col-xs-4
+                .quiz-slide__main__item__checkbox
+                  i.fa.fa-check
+              .quiz-slide__main__item.quiz-slide__main__item__image-name-text--container-3.col-xs-4(id="#{index}_4_3")
                 .quiz-slide__main__item__image-name-text__img
                   img(src="#{item.vc.image}" alt="")
                 .quiz-slide__main__item__image-name-text__name=item.vc.title
                 .quiz-slide__main__item__image-name-text__text=item.vc.text
+                .quiz-slide__main__item__checkbox
+                  i.fa.fa-check
