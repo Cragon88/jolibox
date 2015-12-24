@@ -55,7 +55,7 @@
 
         a {
           text-decoration: none;
-          color: $web-color-lg-op;
+          color: $web-color-op;
           &:hover {
             color: $web-color;
           }
@@ -78,13 +78,11 @@
       }
 
       &__item {
-        img {
-          width: 100%;
-          height: 300px;
-          opacity: 0.7;
-          &:hover {
-            border: 1px solid $web-color;
-            opacity: 1;
+        &__img {
+          background: rgba(255, 255, 255, 0.5);
+          img {
+            height: auto;
+            margin: 0 auto;
           }
         }
         &__link {
@@ -102,12 +100,11 @@
       }
 
       &__item {
-        img {
-          width: 100%;
-          height: 200px;
-          opacity: 0.7;
-          &:hover {
-            opacity: 1;
+        &__img {
+          background: rgba(255, 255, 255, 0.5);
+          img {
+            height: auto;
+            margin: 0 auto;
           }
         }
       }
@@ -125,7 +122,7 @@
     }
 
     &__share {
-      width: 50%;
+      width: 90%;
       background-color: transparent;
       margin: 0 auto;
 
@@ -146,16 +143,38 @@
         &:hover {
           background: $web-color;
         }
-        //border-radius: 100%;
-        //display: inline-block;
-        //width: 50px;
       }
 
     }
 
-    &__description {
+    &__menu {
+      width: 90%;
       text-align: center;
-      font-size: 18px;
+      margin: 15px auto;
+      text-transform: uppercase;
+      font-size: 16px;
+      ul {
+        margin: 0;
+        list-style-type: none;
+        li {
+          display: inline-block;
+          margin-right: 30px;
+          a {
+            color: white;
+            &:hover {
+              color: $web-color;
+            }
+          }
+        }
+      }
+    }
+
+    &__description {
+      color: white;
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 15px;
       padding: 0 50px;
     }
   }

@@ -1,5 +1,5 @@
 ﻿.spotlight{
-    $spotlight-height: 600px;
+    $spotlight-height: 550px;
     $box-margin: 10px;
     //margin-top: $page-margin-top;
     width: 100%;
@@ -16,6 +16,7 @@
         //transform:translate3d(0, -40%,0);
         width: 100%;
         &__box{
+            //color: $web-color;
             margin-top: $box-margin + $page-margin-top;
             height: $spotlight-height - $box-margin*2 - $page-margin-top;
             background-color: rgba(255, 255, 255, 0.8);
@@ -50,7 +51,7 @@
 
             &__button {
                 text-transform: uppercase;
-                margin-top: 50px;
+                margin-top: 25px;
                 font-family: $font-atm-bold;
                 color: white;
                 background-color: $web-color-op;

@@ -83,6 +83,9 @@
     }
   }
 
+  &--transparent.headroom--not-top {
+    background-color: $menu-bg-color;
+  }
   &--transparent.headroom--top {
     background-color: transparent;
   }

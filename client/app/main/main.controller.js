@@ -35,8 +35,8 @@ angular.module('jolibox2App')
         autoplay:true,
         autoplayHoverPause:true,
         autoplayTimeout:3000,
-        animateOut: 'slideOutDown',
-        animateIn: 'flipInX'
+        animateOut: 'slideOutDown'
+        //animateIn: 'flipInX'
       };
       $(".main__brands__carousel--container").owlCarousel(option2);
     });
