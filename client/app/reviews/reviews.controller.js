@@ -6,6 +6,6 @@
 angular.module('jolibox2App')
   .controller('ReviewsController', function ($scope) {
         $scope.$parent.activeMenu =  "reviews";
-
+        $("html, body").scrollTop(0);
     });
 })();

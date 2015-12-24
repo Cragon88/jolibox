@@ -2,6 +2,7 @@
 (function () {
     angular.module('jolibox2App')
         .controller('QuizController', function ($scope, $state) {
+            $("html, body").scrollTop(0);
             $scope.submitQuiz = function () {
                 $state.go('checkout');
             };

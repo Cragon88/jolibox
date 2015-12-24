@@ -49,7 +49,7 @@ angular.module('jolibox2App', [
           }
         })
         .state('videos', {
-          url: '/videos',
+          url: '/tutorials',
           views: {
             "main" : {
               templateUrl: 'app/videos/videos.html',
@@ -63,6 +63,15 @@ angular.module('jolibox2App', [
             "main" : {
               templateUrl: 'app/reviews/reviews.html',
               controller: 'ReviewsController'
+            }
+          }
+        })
+        .state('quiz-begin', {
+          url: '/quiz-begin',
+          views: {
+            "main" : {
+              templateUrl: 'app/quiz/quiz-home.html',
+              controller: 'QuizController'
             }
           }
         })

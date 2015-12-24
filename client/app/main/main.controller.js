@@ -12,6 +12,7 @@ angular.module('jolibox2App')
       //  self.awesomeThings = response.data;
       //});
       $scope.$parent.activeMenu = "home";
+      $("html, body").scrollTop(0);
       var option1 = {
         items:5,
         smartSpeed: 800,

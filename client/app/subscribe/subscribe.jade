@@ -1,7 +1,7 @@
 include ../../components/mixins/common-grid/_common-grid.jade
 navbar
-include ./spotlight.jade
 .web-bg
+  include ./spotlight.jade
   .subscribe
     .container
       .row
@@ -37,6 +37,6 @@ include ./spotlight.jade
           +commondGrid(items, "past-program__square_grid", true)
       .row
         .subscribe__button--container
-          .subscribe__button.btn.web-btn
-            span Subscribe
+          .subscribe__button.btn.web-btn(ng-click="scrollToTop()")
+            span {{App.buttons.buyNow}}
 footer

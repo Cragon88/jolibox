@@ -1,5 +1,29 @@
 .container
-  p
-    | Jolibox
-    = ' | '
-    a(href='#') @Jolibox
+  .footer--container 
+    .footer__share--container
+      .footer__share
+        i.footer__share__item.fa.fa-youtube-play.icon--circle
+        i.footer__share__item.fa.fa-pinterest.icon--circle
+        i.footer__share__item.fa.fa-instagram.icon--circle
+        i.footer__share__item.fa.fa-facebook.icon--circle
+        i.footer__share__item.fa.fa-google-plus.icon--circle
+      .footer__menu
+        ul
+          li
+            a(href="/subscribe")
+              span(ng-class="{'nav-bar--active': isActive('subscribe')}") Subscribe
+          li
+            a(href="/tutorials")
+              span(ng-class="{'nav-bar--active': isActive('videos')}") Tutorials
+          li
+            a(href="/brands")
+              span(ng-class="{'nav-bar--active': isActive('brands')}") Brands
+          li
+            a(href="/reviews")
+              span(ng-class="{'nav-bar--active': isActive('reviews')}") Reviews
+          li
+            a(href="#")
+              span(ng-class="{'nav-bar--active': isActive('aboutUs')}") About
+          li
+            a(href="#")
+              span(ng-class="{'nav-bar--active': isActive('ContactUs')}") Contact

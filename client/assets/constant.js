@@ -1,4 +1,9 @@
 var App = {
+  buttons: {
+    start : "Start",
+    subscribe: "Subscribe",
+    buyNow: "Buy Now"
+  },
   subscribe: {
     title: "The Beauty Box",
     image: "http://placehold.it/600x400?text=Image",
@@ -34,135 +39,70 @@ var App = {
     }
   },
 
+  quiz : {
+    header: "The Joli Quiz",
+    title: "You are about to join Joli!",
+    firstLine: "Take this fun 3 minute quiz to reveal what you can get!",
+    text: "You can answers here will help us personalize your experience on joli.com and in your Glam Bag."
+  },
+
   brands: {
     title: "Our Brands",
     search: "Search for a brand",
     logos: [
       {
-        name : "A",
-        image: "http://placehold.it/300x250?text=logo"
+        name : "banker's secret",
+        image: "/assets/images/brands/bankers-secret.jpg"
+      },
+      {
+        name : "estee lauder.",
+        image: "/assets/images/brands/estee-lauder.png"
+      },
+      {
+        name : "innissfree",
+        image: "/assets/images/brands/innissfree.png"
       },
       {
         name : "A",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       },
       {
         name : "A",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       },
       {
         name : "A",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "A",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "A",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "A",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "A",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "A",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       },
       {
         name : "B",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       },
       {
         name : "B",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       },
       {
         name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "B",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       },
       {
         name : "C",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       },
       {
         name : "C",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       },
       {
         name : "C",
-        image: "http://placehold.it/300x250?text=logo"
-      },
-      {
-        name : "C",
-        image: "http://placehold.it/300x250?text=logo"
+        image: "http://placehold.it/300x300?text=logo"
       }
     ]
   },
 
   videos: {
-    title: "Our Videos",
+    title: "Our Tutorials",
     search: "Search for a video",
     items: [
       {

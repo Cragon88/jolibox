@@ -1,7 +1,7 @@
 ﻿mixin _planPackage(items)
   each item in items
     if item.active
-      a(href="/quiz").plan-package
+      a(href="/quiz-begin").plan-package
         .plan-package__item.plan-package__item--active.col-xs-12
           .plan-package__item__title=item.title
           .plan-package__item__price
@@ -19,7 +19,7 @@
           .plan-package__item__button.btn.web-btn
             span Subscribe
     else
-      a(href="/quiz").plan-package
+      a(href="/quiz-begin").plan-package
         .plan-package__item.plan-package__item--inactive.col-xs-4
           .plan-package__item__title=item.title
           .plan-package__item__price

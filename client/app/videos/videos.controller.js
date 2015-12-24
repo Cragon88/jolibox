@@ -7,6 +7,7 @@ angular.module('jolibox2App')
   .controller('VideosController', function ($scope, $http) {
         $scope.$parent.activeMenu =  "videos";
         $scope.activeVideos = App.videos.items;
+        $("html, body").scrollTop(0);
 
         $("#video-search").keyup(function( event ) {
             if ( event.which == 13 ) {

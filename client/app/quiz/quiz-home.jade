@@ -1,0 +1,22 @@
+include ../../components/mixins/quiz/_quiz-slide.jade
+.web-bg
+  .quiz
+    .container
+      .row
+        .quiz__header
+          .quiz__header__logo.col-xs-6
+            a(href="/")
+              img(src="/assets/images/logo.jpg" alt="")
+          .quiz__header__text.col-xs-6 {{App.quiz.header}}
+        .quiz__content
+          .quiz__content__home-start
+            .quiz__content__home-start__img.col-sm-5
+              img(src="http://placehold.it/600x600?text=avt" alt="")
+            .quiz__content__home-start__main.col-sm-7
+              .quiz__content__home-start__main--container
+                h1.quiz__content__home-start__main__title {{App.quiz.title}}
+                .quiz__content__home-start__main__first-line {{App.quiz.firstLine}}
+                .quiz__content__home-start__main__line {{App.quiz.text}}
+                a(href="/quiz")
+                  .btn.web-btn.quiz__content__home-start__main__button {{App.buttons.start}}
+
