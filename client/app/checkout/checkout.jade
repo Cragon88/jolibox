@@ -4,4 +4,154 @@ navbar
     .row
       .checkout
         h1.checkout__title Checkout
+        .checkout__main
+          .checkout__main__block
+            .row
+              .checkout__main__order.col-xs-7
+                h2.checkout__main__order__title Review Order
+                .row
+                  .checkout__main__order__img.col-xs-5
+                    img(src="/assets/images/checkout/checkout.jpg" alt="")
+                  .checkout__main__order__box.col-xs-7
+                    h3.checkout__main__order__box__title Jolibox organic
+                    h4.checkout__main__order__box__plan Monthly plan
+                    .checkout__main__order__box__first First month: February
+                    .checkout__main__order__box__item--container
+                      ul
+                        li.checkout__main__order__box__item 5 beauty Products
+                        li.checkout__main__order__box__item Billed every months
+                        li.checkout__main__order__box__item Free shiping within Vietnam
+                    .checkout__main__order__box__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium. Vestibulum pharetra viverra erat tempus consectetur. Phasellus laoreet sagittis libero vel fringilla. Vestibulum bibendum mauris vitae dolor tempor euismod. Curabitur non dictum lorem, ac pharetra velit.
+                .checkout__main__order__delivery
+                  h3.checkout__main__order__delivery__title Delivery Date
+                  .checkout__main__order__delivery__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium. Vestibulum pharetra viverra erat tempus consectetur. Phasellus laoreet sagittis libero vel fringilla. Vestibulum bibendum mauris vitae dolor tempor euismod.
+              .checkout__main__order__price.col-xs-5
+                h2.checkout__main__order__price__title Price
+                .checkout__main__order__price__coupon
+                  .row
+                    .checkout__main__order__price__coupon__input.col-xs-7
+                      input.form-control(placeholder="Discount code here")
+                    .checkout__main__order__price__coupon__button.col-xs-5
+                      .btn.web-btn Apply Coupon
+                    .checkout__main__order__price__coupon__list.col-xs-12
+                      .row
+                        .checkout__main__order__price__coupon__list__item
+                          .checkout__main__order__price__coupon__list__item__name.col-xs-6 Subtotal
+                          .checkout__main__order__price__coupon__list__item__price.col-xs-6 $15.0
+                        .checkout__main__order__price__coupon__list__item
+                          .checkout__main__order__price__coupon__list__item__name.col-xs-6 Shipping
+                          .checkout__main__order__price__coupon__list__item__price.col-xs-6 $0.0
+                        .checkout__main__order__price__coupon__list__item
+                          .checkout__main__order__price__coupon__list__item__name.col-xs-6 Tax
+                          .checkout__main__order__price__coupon__list__item__price.col-xs-6 $0.0
+                        .checkout__main__order__price__coupon__list__item
+                          .checkout__main__order__price__coupon__list__item__name.col-xs-6 Grand Total
+                          .checkout__main__order__price__coupon__list__item__price.col-xs-6 $15.0
+          .row
+            .col-xs-7
+              .checkout__main__block
+                .checkout__main__bill
+                  .checkout__main__bill--signin
+                    h2.checkout__main__bill__title Sign up
+                    .form-group
+                      .checkout__main__bill__label
+                        label Email Address
+                      .checkout__main__bill__input
+                        input.form-control(placeholder="email@gmail.com")
+                    .form-group
+                      .checkout__main__bill__label
+                        label Password
+                      .checkout__main__bill__input
+                        input.form-control(type="password" placeholder="password")
+                    .form-group
+                      .checkout__main__bill__label
+                        label Confirm Password
+                      .checkout__main__bill__input
+                        input.form-control(type="password" placeholder="password")
+                    .checkout__main__bill__button.checkout__main__bill__button--right
+                      .btn.web-btn Sign In
+                  .checkout__main__bill--address
+                    h2.checkout__main__bill__title Billing Address
+                    .row
+                      .form-group.col-xs-6
+                        .checkout__main__bill__label
+                          label First name
+                        .checkout__main__bill__input
+                          input.form-control(placeholder="Your First Name")
+                      .form-group.col-xs-6
+                        .checkout__main__bill__label
+                          label Last name
+                        .checkout__main__bill__input(placeholder="Your Last Name")
+                          input.form-control
+                    .form-group
+                      .checkout__main__bill__label
+                        label Company name/School
+                      .checkout__main__bill__input
+                        input.form-control(placeholder="Company name / School name")
+                    .form-group
+                      .checkout__main__bill__label
+                        label Address 1
+                      .checkout__main__bill__input
+                        input.form-control(placeholder="Street Number")
+                    .form-group
+                      .checkout__main__bill__label
+                        label Address 2
+                      .checkout__main__bill__input
+                        input.form-control(placeholder="Street Number")
+                    .form-group
+                      .checkout__main__bill__label
+                        label Country
+                      .checkout__main__bill__input
+                        input.form-control(placeholder="Your Country")
+                    .row
+                      .form-group.col-xs-4
+                        .checkout__main__bill__label
+                          label City
+                        .checkout__main__bill__input
+                          input.form-control(placeholder="Your City")
+                      .form-group.col-xs-8
+                        .checkout__main__bill__label
+                          label Mobile phone
+                        .checkout__main__bill__input
+                          input.form-control(placeholder="0123456789")
+                    .checkbox
+                      label
+                        input(type="checkbox")
+                        | Use billing address as shipping address
+            .col-xs-5
+              .checkout__main__block
+                h2.checkout__main__bill__title Payment Method
+                .checkout__main__bill__payment
+                  .checkout__main__bill__payment__method
+                    .row
+                      .checkout__main__bill__payment__method__option.col-xs-5
+                        .radio
+                          label
+                            input(type="radio" name="payment-method" value="credit" checked=true)
+                            | Credit Card
+                      .checkout__main__bill__payment__method__image.col-xs-7
+                        img(src="/assets/images/checkout/discover.png" alt="")
+                        img(src="/assets/images/checkout/visa.png" alt="")
+                        img(src="/assets/images/checkout/master-card.png" alt="")
+                    .row
+                      .checkout__main__bill__payment__method__option.col-xs-5
+                        .radio
+                          label
+                            input(type="radio" name="payment-method" value="paypal")
+                            | Paypal
+                      .checkout__main__bill__payment__method__image.col-xs-7
+                        img(src="/assets/images/checkout/paypal.png" alt="")
+                    .row
+                      .checkout__main__bill__payment--term-condition
+                        .checkbox
+                          label
+                            input(type="checkbox")
+                            | Yes, I agree with the Terms & Conditions provides by JoliBox.
+                        .checkout__main__bill__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium. Vestibulum pharetra viverra erat tempus consectetur. Phasellus laoreet sagittis libero vel fringilla. Vestibulum bibendum mauris vitae dolor tempor euismod. Curabitur non dictum lorem, ac pharetra velit. Pellentesque ut volutpat risus.
+                  .checkout__main__bill__button.checkout__main__bill__button--center
+                    .btn.web-btn Become a Subscriber
+
+
+
+
 footer

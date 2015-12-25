@@ -3,5 +3,187 @@
   padding: 30px 0;
   &__title {
     color: $web-color;
+    text-align: center;
+    font-family: $font-atm-bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
   }
+
+  &__main {
+    &__block {
+      border: 1px solid $very-light-gray;
+      padding: 15px;
+      margin-bottom: 25px;
+      &--margin-right {
+        margin-right: 15px;
+      }
+    }
+    &__order {
+      &__title {
+        margin-top: 0;
+        font-family: $font-atm-bold;
+      }
+
+      &__img {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &__box {
+        &__title {
+          margin: 0;
+          text-transform: uppercase;
+        }
+        &__plan {
+          margin: 5px 0;
+          font-family: $font-atm-bold;
+        }
+
+        &__first {
+          font-family: $font-atm-italic;
+          margin-bottom: 10px;
+        }
+
+        &__item {
+          &--container {
+
+          }
+        }
+
+        &__description {
+          //font-family: $font-atm-italic;
+          font-size: 15px;
+        }
+      }
+
+      &__delivery {
+        background-color: $menu-bg-color;
+        padding: 15px;
+        margin-top: 25px;
+        border: 1px dotted $web-color;
+        &__title {
+          margin: 0;
+        }
+        &__description {
+
+        }
+      }
+
+      &__price {
+        &__title {
+          margin-top: 0;
+          font-family: $font-atm-bold;
+        }
+
+        &__coupon {
+          &__input {
+            display: inline-block;
+          }
+
+          &__button {
+            padding-left: 0;
+            .web-btn {
+              width: 100%;
+            }
+          }
+
+          &__list {
+            margin-top: 25px;
+            &__item {
+              &__name {
+
+              }
+
+              &__price {
+                text-align: right;
+              }
+
+              &:nth-last-child(1) {
+                font-family: $font-atm-bold;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    &__bill {
+      &__title {
+        margin-top: 0;
+        font-family: $font-atm-bold;
+      }
+
+      &--signin {
+        margin-bottom: 15px;
+      }
+
+      &--address {
+
+      }
+
+      &__payment {
+        &__method {
+          padding: 0 10px;
+          margin-bottom: 15px;
+          //background: $menu-bg-color;
+          .row {
+            border: 1px solid $very-light-gray;
+            margin-bottom: 5px;
+          }
+          &__option{
+
+          }
+
+          &__image {
+            text-align: right;
+            height: 40px;
+            img {
+              height: 100%;
+              width: auto;
+            }
+          }
+
+        }
+
+        &--term-condition {
+          //border: 1px solid $very-light-gray;
+          padding: 0 10px 10px 10px;
+          margin-top: 15px;
+        }
+      }
+
+      &__button {
+        &--right {
+          text-align: right;
+        }
+        &--center {
+          text-align: center;
+          .web-btn {
+            width: 100%;
+          }
+        }
+      }
+
+      &__label {
+        &--required {
+
+        }
+      }
+
+      &__input {
+
+      }
+
+      &__description {
+        font-family: $font-atm-italic;
+        font-size: 13px;
+        //margin-bottom: 25px;
+      }
+    }
+  }
+
+
 }
