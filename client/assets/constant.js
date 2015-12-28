@@ -36,7 +36,25 @@ var App = {
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis varius sapien sed pretium."
         }
       ]
-    }
+    },
+    plans: [
+      {
+        id: 1,
+        package: "Monthly"
+      },
+      {
+        id: 2,
+        package: "3-month"
+      },
+      {
+        id: 3,
+        package: "6-month"
+      },
+      {
+        id: 4,
+        package: "12-month"
+      }
+    ]
   },
 
   quiz : {

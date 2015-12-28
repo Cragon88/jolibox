@@ -67,7 +67,7 @@ angular.module('jolibox2App', [
           }
         })
         .state('quiz-begin', {
-          url: '/quiz-begin',
+          url: '/quiz-begin/:planId',
           views: {
             "main" : {
               templateUrl: 'app/quiz/quiz-home.html',
@@ -76,7 +76,7 @@ angular.module('jolibox2App', [
           }
         })
         .state('quiz', {
-          url: '/quiz',
+          url: '/quiz/:planId',
           views: {
             "main" : {
               templateUrl: 'app/quiz/quiz.html',
@@ -85,13 +85,14 @@ angular.module('jolibox2App', [
           }
         })
         .state('checkout', {
-          url: '/checkout',
+          url: '/checkout/:planId',
           views: {
             "main" : {
               templateUrl: 'app/checkout/checkout.html',
               controller: 'CheckoutController'
             }
-          }
+          },
+          params: {answers: []}
         })
     ;
 

@@ -1,9 +1,10 @@
 'use strict';
 (function () {
     angular.module('jolibox2App')
-        .controller('QuizController', function ($scope, $state) {
+        .controller('QuizController', function ($scope, $state, $stateParams) {
             $scope.answer= [];
             $scope.currentIdx = 0;
+            $scope.planId = $stateParams.planId;
             $("html, body").scrollTop(0);
             var option = {
                 items: 1,
@@ -43,7 +44,11 @@
             });
 
             $scope.submitQuiz = function () {
-                $state.go('checkout');
+                $state.go('checkout', {planId: $scope.planId, answers:  $scope.answer});
+            };
+
+            $scope.startQuiz = function () {
+                $state.go('quiz', {planId: $scope.planId});
             };
         });
 })();

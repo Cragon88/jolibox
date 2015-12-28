@@ -17,6 +17,6 @@ include ../../components/mixins/quiz/_quiz-slide.jade
                 h1.quiz__content__home-start__main__title {{App.quiz.title}}
                 .quiz__content__home-start__main__first-line {{App.quiz.firstLine}}
                 .quiz__content__home-start__main__line {{App.quiz.text}}
-                a(href="/quiz")
+                a(href="#" ng-click="startQuiz()")
                   .btn.web-btn.quiz__content__home-start__main__button {{App.buttons.start}}
 
